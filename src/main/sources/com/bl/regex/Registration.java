@@ -20,7 +20,7 @@ public class Registration {
     }
     
 
-    public static void validLastName(){
+    public void validLastName(){
         System.out.println("Enter the Last Name");
         String lastname = scanner.next();
 
@@ -33,5 +33,19 @@ public class Registration {
         else
             System.out.println("Last name is in pattern");
     }
+    
+    public void validEmail(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the Email Address : ");
+        String email = scanner.next();
+        String regex2 = "^A-Z0-9._%+-]+@[A-Z0-9.-]+\\\\.[A-Z]{2,6}$";
+        Pattern pattern2 = Pattern.compile(regex2);
+        Matcher matcher2 = pattern2.matcher(email);
+        if (matcher2.matches())
+            System.out.println("Email Address is found");
+        else
+            System.out.println("Email Address is not found");
+    }
+    
 }
 
