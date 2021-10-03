@@ -98,6 +98,19 @@ public class Registration {
         else
             System.out.println("Password is Invalid");
     }
+    
+    public  void validPasswordRule4(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the PassWord : ");
+        String passWord2 = scanner.next();
+        String regex6 = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()])(?=\\\\S+$).{8, 20}$";
+        Pattern pattern6 = Pattern.compile(regex6);
+        Matcher matcher6 = pattern6.matcher(passWord2);
+        if (matcher6.matches()	)
+            System.out.println("Password is Valid");
+        else
+            System.out.println("Password is Invalid");
+    }
 }
 
 

@@ -17,6 +17,7 @@ public class Regex {
 		user.validPasswordRule1();
 		user.validPasswordRule2();
 		user.validPasswordRule3();
-        }
+		user.validPasswordRule4();
+	}
 }
 
