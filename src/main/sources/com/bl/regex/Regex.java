@@ -12,6 +12,8 @@ public class Regex {
 
 		Registration user = new Registration();
 		user.validName();
+		user.validLastName();
 
         }
 }
+

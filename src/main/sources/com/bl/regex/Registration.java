@@ -14,8 +14,24 @@ public class Registration {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(firstname);
         if (matcher.matches())
-            System.out.println("First name is valid");
+            System.out.println("First name is in pattern");
         else
-            System.out.println("First name is !Invalid");
+            System.out.println("First name is not in pattern");
+    }
+    
+
+    public static void validLastName(){
+        System.out.println("Enter the Last Name");
+        String lastname = scanner.next();
+
+        String regex1 = "^[A-Za-z]{1}[a-z]{3,10}$";
+
+        Pattern pattern1 = Pattern.compile(regex1);
+        Matcher matcher1 = pattern1.matcher(lastname);
+        if (matcher1.matches())
+            System.out.println("Last name is in pattern");
+        else
+            System.out.println("Last name is in pattern");
     }
 }
+
