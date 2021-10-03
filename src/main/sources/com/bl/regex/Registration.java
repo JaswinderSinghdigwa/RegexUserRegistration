@@ -51,7 +51,7 @@ public class Registration {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your mobile number : ");
         String mobileno = scanner.nextLine();
-        String regex3 = "^[0-9]{2}\\s{0,1}[0-9]{10}$";
+        String regex3 = "^(0/91)?[7-9][0-9]{10}$";
         Pattern pattern3 = Pattern.compile(regex3);
         Matcher matcher3 = pattern3.matcher(mobileno);
         if (matcher3.matches())
