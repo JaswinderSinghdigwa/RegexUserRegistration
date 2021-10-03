@@ -72,6 +72,19 @@ public class Registration {
         else
             System.out.println("Password is Invalid");
     }
+    
+    public static void validPasswordRule2(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the Password according to rule 2 : ");
+        String password1 = scanner.nextLine();
+        String regex5 = "^[A-Z]{1}+[a-zA-z0-9]{8,}$";
+        Pattern pattern5 = Pattern.compile(regex5);
+        Matcher matcher5 = pattern5.matcher(password1);
+        if (matcher5.matches())
+            System.out.println("Password is Valid");
+        else
+            System.out.println("Password is Invalid");
+    }
 }
 
 

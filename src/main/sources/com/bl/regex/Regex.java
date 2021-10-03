@@ -13,7 +13,9 @@ public class Regex {
 		Registration user = new Registration();
 		user.validName();
 		user.validLastName();
-
+		user.validPhoneNumber();
+		user.validPasswordRule1();
+		user.validPasswordRule2();
         }
 }
 
