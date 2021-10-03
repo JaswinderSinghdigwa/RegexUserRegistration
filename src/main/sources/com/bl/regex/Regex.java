@@ -16,6 +16,7 @@ public class Regex {
 		user.validPhoneNumber();
 		user.validPasswordRule1();
 		user.validPasswordRule2();
+		user.validPasswordRule3();
         }
 }
 
