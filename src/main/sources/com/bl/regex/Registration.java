@@ -47,5 +47,18 @@ public class Registration {
             System.out.println("Email Address is not found");
     }
     
+    public static void validPhoneNumber(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your mobile number : ");
+        String mobileno = scanner.nextLine();
+        String regex3 = "^[0-9]{2}\\s{0,1}[0-9]{10}$";
+        Pattern pattern3 = Pattern.compile(regex3);
+        Matcher matcher3 = pattern3.matcher(mobileno);
+        if (matcher3.matches())
+            System.out.println("Phone number is Valid");
+        else
+            System.out.println("Phone number is Invalid");
+    }
 }
+
 
